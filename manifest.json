@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "HMO",
+  "description": "It records the user's screen",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Recorder",
+    "default_icon": "/images/iCON.png"
+  },
+  "permissions": [
+    "desktopCapture",
+    "scripting",
+    "tab",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "32": "/images/iCON.png"
+  }
+}
