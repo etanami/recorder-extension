@@ -11,7 +11,7 @@
   "permissions": [
     "desktopCapture",
     "scripting",
-    "tab",
+    "tabs",
     "activeTab"
   ],
   "background": {
@@ -22,6 +22,6 @@
     "https://*/*"
   ],
   "icons": {
-    "32": "/images/iCON.png"
+    "128": "/images/iCON.png"
   }
 }
