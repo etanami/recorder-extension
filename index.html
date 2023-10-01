@@ -7,56 +7,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="min-w-[300px] border-2 border-gray-200 px-6 pt-6 pb-8 mx-auto font-work-sans">
+  <div class="container">
     <div>
-      <nav class="flex justify-between items-center">
-        <div class="flex items-center gap-2">
+      <nav>
+        <div class="logo_container">
           <span>
-            <img class="w-7 h-7" src="images/Logo.png" alt="Logo icon" />
+            <img class="logo" src="images/Logo.png" alt="Logo icon" />
           </span>
-          <h3 class="text-base font-bold font-sora text-primary-500">HelpMeOut</h3>
+          <h3 class="logo_text">HelpMeOut</h3>
         </div>
-        <span class="flex items-center gap-3">
+        <span class="icon_container">
           <span>
-            <img class="w-5 h-5" src="images/setting-2.svg" alt="Setting icon" />
+            <img class="icon" src="images/setting-2.svg" alt="Setting icon" />
           </span>
           <span>
-            <img class="w-5 h-5" src="images/close-circle.png" alt="Close icon" />
+            <img class="icon" src="images/close-circle.png" alt="Close icon" />
           </span>
         </span>
       </nav>
-      <p class="max-w-[225px] mt-4 text-sm text-primary-400">This extension helps you record and share help videos with ease.</p>
+      <p class="about">This extension helps you record and share help videos with ease.</p>
     </div>
-    <main class="flex flex-col gap-6">
-      <div class="flex justify-between mt-8 px-8">
-        <div class="flex flex-col items-center gap-2">
+    <main>
+      <div class="tab_container">
+        <div class="tab">
           <span>
-            <img class="w-8 h-8" src="images/monitor.png" alt="full screen" />
+            <img class="wh-8" src="images/monitor.png" alt="full screen" />
           </span>
-          <p class="text-sm font-medium text-primary-200">Full screen</p>
+          <p class="full_screen">Full screen</p>
         </div>
-        <div class="flex flex-col items-center gap-2">
+        <div class="tab">
           <span>
             <img src="images/copy.png" alt="Current screen" />
           </span>
-          <p class="text-sm font-semibold text-primary-500">Current Tab</p>
+          <p class="current_tab">Current Tab</p>
         </div>
       </div>
-      <div class="flex justify-between border border-primary-600 rounded-xl py-3 pl-4 pr-3">
-        <div class="flex items-center text-sm font-medium text-primary-600">
-          <span><img class="w-6 h-6 mr-2" src="images/video-camera.png" alt="Camera icon" /></span>
+      <div class="control_container">
+        <div class="control">
+          <span><img class="wh-6" src="images/video-camera.png" alt="Camera icon" /></span>
           Camera
         </div>
-        <Toggle />
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </div>
-      <div class="flex justify-between border border-primary-600 rounded-xl py-3 pl-4 pr-3">
-        <div class="flex items-center text-sm font-medium text-primary-500">
-          <span><img class="w-6 h-6 mr-2" src="images/microphone.png" alt="Microphone icon" /></span>
+      <div class="control_container">
+        <div class="control">
+          <span><img class="wh-6" src="images/microphone.png" alt="Microphone icon" /></span>
           Audio
         </div>
-        <Toggle />
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
       </div>
-      <button id="start_recording" class="block mt-2 p-4 text-center text-white text-base bg-primary-500  hover:opacity-90 rounded-xl" type="button">Start Recording</button>
+      <button id="start_recording" type="button">Start Recording</button>
     </main>
   </div>
 
