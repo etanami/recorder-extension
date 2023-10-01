@@ -20,18 +20,18 @@ const onAccessApproved = (stream) => {
       console.log(event)
       console.log(url)
 
-      // let a = document.createElement("a");
+      let a = document.createElement("a");
 
-      // a.style.display = "none";
-      // a.href = url;
-      // a.download = "screen-recording.webm"
+      a.style.display = "none";
+      a.href = url;
+      a.download = "screen-recording.webm"
 
-      // document.body.appendChild(a);
-      // a.click();
+      document.body.appendChild(a);
+      a.click();
 
-      // document.body.removeChild(a);
+      document.body.removeChild(a);
 
-      // URL.revokeObjectURL(url);
+      URL.revokeObjectURL(url);
   }
 }
 

@@ -126,6 +126,7 @@ main {
 
 #start_recording:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 /* Toggler button */
